@@ -4,7 +4,12 @@
 <body>
 <form method="post" action="submit.php">
   <p><input type="text" name="name" placeholder="Full name" required></p>
-  <p><input type="email" name="email" placeholder="you@college.edu" required></p>
+  <p><input type="email" name="email" placeholder="you@college.edu" required
+      <p><input type="text" name="mobile" placeholder="10-digit mobile" required
+            pattern="[0-9]{10}" title="Enter exactly 10 digits"></p>
+  <p><input type="password" name="password" placeholder="Min 6 characters" required minlength="6"></p>
+  <p><input type="number" name="age" placeholder="Age (17-30)" required min="17" max="30"></p>
+  <p><button type="submit">Register</button></p>></p>
 </form>
 </body>
 </html>
